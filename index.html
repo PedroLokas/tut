@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoria - Pedro Lucas | Disciplinas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header com navegação -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>Tutoria - Pedro Lucas</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Disciplinas</a></li>
+                    <li><a href="atividades.html" class="nav-link">Atividades</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="main">
+        <div class="container">
+            <section class="page-header">
+                <h2>Disciplinas</h2>
+                <p>Explore os conteúdos organizados por disciplina</p>
+            </section>
+
+            <!-- Loading indicator -->
+            <div class="loading" id="loading">
+                <div class="loading-spinner"></div>
+                <p>Carregando disciplinas...</p>
+            </div>
+
+            <!-- Container das disciplinas -->
+            <div class="disciplines-container" id="disciplinesContainer">
+                <!-- Disciplinas serão carregadas dinamicamente via JavaScript -->
+            </div>
+
+            <!-- Mensagem de erro -->
+            <div class="error-message" id="errorMessage" style="display: none;">
+                <p>Erro ao carregar as disciplinas. Tente novamente mais tarde.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pedro Lucas - Tutoria Educacional</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
